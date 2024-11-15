@@ -37,7 +37,7 @@
                 <li><a href="#avisos">Avisos</a></li>
                 <li><a href="#cursos">Cursos</a></li>
                 <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#corpo-docente">Corpo Docente</a></li>
+                <li><a href="#corpo-docente">Colaboradores</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
             </ul>
@@ -61,32 +61,36 @@
         
         
         <section id="avisos">
-            <h2>Avisos Importantes</h2>
-            <div class="cartao avisos">
-                <div class="aviso-item">
-                    <div class="aviso-postit prioridade-alta">
-                        <span class="aviso-data">15/09:</span>
-                        <p>Reunião de pais e mestres às 19h no auditório.</p>
-                        <p><strong>Local:</strong> Auditório Principal</p>
-                        <p><strong>Participantes:</strong> Todos os pais e mestres</p>
-                        <a href="https://exemplo.com/mais-detalhes-reuniao" target="_blank" class="btn-leia-mais">Leia Mais</a>
+            <div class="container avisos-container p-3 rounded">
+                <h2 class="text-center mb-4 titulo-aviso">Avisos Importantes</h2>
+                <div class="row">
+                    <!-- Aviso 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="aviso-postit prioridade-alta">
+                            <span class="aviso-data">05/12:</span>
+                            <p>Reunião de pais e mestres às 19h no auditório.</p>
+                            <p><strong>Local:</strong> Auditório Principal</p>
+                            <p><strong>Participantes:</strong> Todos os pais e mestres</p>
+                        </div>
                     </div>
-                </div>
-                <div class="aviso-item">
-                    <div class="aviso-postit prioridade-media">
-                        <span class="aviso-data">20/09:</span>
-                        <p>Início das inscrições para a Olimpíada de Matemática.</p>
-                        <p><strong>Inscrições até:</strong> 10/10</p>
-                        <p><strong>Local:</strong> Secretaria da Escola</p>
-                        <a href="https://exemplo.com/mais-detalhes-olimpiada" target="_blank" class="btn-leia-mais">Leia Mais</a>
+        
+                    <!-- Aviso 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="aviso-postit prioridade-media">
+                            <span class="aviso-data">20/11:</span>
+                            <p>Início das inscrições para a Olimpíada de Matemática.</p>
+                            <p><strong>Inscrições até:</strong> 10/10</p>
+                            <p><strong>Local:</strong> Secretaria da Escola</p>
+                        </div>
                     </div>
-                </div>
-                <div class="aviso-item">
-                    <div class="aviso-postit prioridade-baixa">
-                        <span class="aviso-data">01/10:</span>
-                        <p>Feriado escolar - Dia do Professor.</p>
-                        <p><strong>Atividades:</strong> Não haverá atividades escolares</p>
-                        <a href="https://exemplo.com/mais-detalhes-feriado" target="_blank" class="btn-leia-mais">Leia Mais</a>
+        
+                    <!-- Aviso 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="aviso-postit prioridade-baixa">
+                            <span class="aviso-data">25/12:</span>
+                            <p>Feriado escolar - Dia do Professor.</p>
+                            <p><strong>Atividades:</strong> Não haverá atividades escolares</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,28 +98,64 @@
         
         
         <section id="cursos">
-            <h2>Nossos Cursos</h2>
-            <div class="cartao cursos-container">
-                <ul class="cursos-lista">
-                    <li class="curso-item">
-                        <a href="https://querobolsa.com.br/carreiras-e-profissoes/analista-de-marketing-digital" target="_blank">Marketing Digital</a>
-                    </li>
-                    <li class="curso-item">
-                        <a href="https://unifor.br/web/melhor-profissao/o-que-faz-um-profissional-de-energias-renovaveis-descubra-as-possibilidades-de-atuacao" target="_blank">Energias Renováveis</a>
-                    </li>
-                    <li class="curso-item">
-                        <a href="https://cotuca.unicamp.br/cursos-tecnicos/desenvolvimento-de-sistemas/" target="_blank">Desenvolvimento de Sistemas</a>
-                    </li>
-                    <li class="curso-item">
-                        <a href="https://br.indeed.com/conselho-de-carreira/encontrando-emprego/o-que-faz-desenvolvedor-jogos" target="_blank">Desenvolvimento de Jogos Digitais</a>
-                    </li>
-                </ul>
+            <div class="container cursos-container">
+                <h2 class="text-center mb-4 titulo-aviso">Nossos Cursos</h2>
+                <div class="row cursos-lista">
+                    <!-- Card de Marketing Digital -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card curso-item">
+                            <img src="img/marketing.webp" class="card-img-top" alt="Marketing Digital">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Marketing Digital</h5>
+                                <p class="card-text">Desenvolva estratégias de marketing para o mercado digital.</p>
+                                <a href="https://querobolsa.com.br/carreiras-e-profissoes/analista-de-marketing-digital" target="_blank" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card de Energias Renováveis -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card curso-item">
+                            <img src="img/energias.webp" class="card-img-top" alt="Energias Renováveis">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Energias Renováveis</h5>
+                                <p class="card-text">Explore fontes de energia sustentável e suas aplicações.</p>
+                                <a href="https://unifor.br/web/melhor-profissao/o-que-faz-um-profissional-de-energias-renovaveis-descubra-as-possibilidades-de-atuacao" target="_blank" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card de Desenvolvimento de Sistemas -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card curso-item">
+                            <img src="img/dev sistemas.webp" class="card-img-top" alt="Desenvolvimento de Sistemas">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Desenvolvimento de Sistemas</h5>
+                                <p class="card-text">Aprenda a criar sistemas de software modernos e eficazes.</p>
+                                <a href="https://cotuca.unicamp.br/cursos-tecnicos/desenvolvimento-de-sistemas/" target="_blank" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card de Desenvolvimento de Jogos Digitais -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card curso-item">
+                            <img src="img/dev jogos.webp" class="card-img-top" alt="Desenvolvimento de Jogos Digitais">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Desenvolvimento de Jogos Digitais</h5>
+                                <p class="card-text">Descubra como criar e desenvolver jogos digitais.</p>
+                                <a href="https://br.indeed.com/conselho-de-carreira/encontrando-emprego/o-que-faz-desenvolvedor-jogos" target="_blank" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
+        
         <section id="eventos">
             <div class="container cursos-container">
-                <h2 class="text-center my-4">Próximos Eventos</h2>
+                <h2 class="text-center mb-4 titulo-aviso">Próximos Eventos</h2>
                 <div class="row">
                     <!-- Card para Feira das Profissões -->
                     <div class="col-md-4 mb-4">
@@ -157,7 +197,7 @@
         
         <section id="corpo-docente">
             <div class="container">
-                <h2 class="titulo-corpo-docente text-center my-4">Colaboradores</h2>
+                <h2 class="text-center mb-4 titulo-aviso">Colaboradores</h2>
                 <div class="row grade-docentes">
                     <!-- Card para cada colaborador -->
                     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -230,7 +270,7 @@
                             <div class="foto-docente">
                                 <img src="img/Ana.jpg" alt="Prof. Ana">
                             </div>
-                            <h3>Prof. Aninha</h3>
+                            <h3>Profa. Aninha</h3>
                             <p>EJA Técnico</p>
                         </div>
                     </div>
@@ -266,8 +306,35 @@
                             <div class="foto-docente">
                                 <img src="img/Diana Barbosa - Língua Portuguesa.jpg" alt="Profa. Diana Barbosa">
                             </div>
-                            <h3>Diana Barbosa</h3>
+                            <h3>Profa. Diana Barbosa</h3>
                             <p>Língua Portuguesa</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="membro-docente">
+                            <div class="foto-docente">
+                                <img src="img/Kellyanne-Filosofia.jpg" alt="Profa. Kellyanne">
+                            </div>
+                            <h3>Profa. Kellyanne</h3>
+                            <p>Filosofia</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="membro-docente">
+                            <div class="foto-docente">
+                                <img src="img/Rick - Educação Física.jpg" alt="Prof. Rick">
+                            </div>
+                            <h3>Prof. Rick</h3>
+                            <p>Educação Física</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="membro-docente">
+                            <div class="foto-docente">
+                                <img src="img/Wandres Fagno - Língua Inglesaa.jpg" alt="Prof. Wandres Fagno">
+                            </div>
+                            <h3>Prof. Wandres Fagno </h3>
+                            <p>Língua Inglesaa</p>
                         </div>
                     </div>
                 </div>
@@ -278,18 +345,18 @@
         
 
         <section id="contato">
-            <h2>Entre em Contato</h2>
+            <h2 class="text-center mb-4 titulo-aviso">Entre em Contato</h2>
             <div class="cartao">
-                <p><strong>Email:</strong> contato@colegioinovacao.edu.br</p>
-                <p><strong>Telefone:</strong> (11) 1234-5678</p>
-                <p><strong>Endereço:</strong> Rua da Educação, 123 - Bairro do Conhecimento, Cidade Inovadora - SP</p>
+                <p><strong>Email:</strong> cosmaramos@gmail.com.edu.br</p>
+                <p><strong>Telefone:</strong> (87) 9 9112-5692</p>
+                <p><strong>Endereço:</strong> AV CORINTO MATOS, S/N - CENTRO - 64685-000 - Marcolândia - PI</p>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Colégio Inovação. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Escola Cosma Ramos Sousa. Todos os direitos reservados.</p>
         </div>
     </footer>
 

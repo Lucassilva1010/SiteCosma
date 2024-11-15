@@ -216,54 +216,61 @@ footer {
 
 /* Aqui são os avisos da escola */
 
-.cartao.avisos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #f0f4c3; /* Cor de fundo para o contêiner de avisos */
+/* Estilo para o contêiner de avisos */
+.avisos-container {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título dos avisos */
+.titulo-aviso {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
+    display: inline-block;
 }
 
-.aviso-item {
-    flex: 1 1 30%;
-    min-width: 200px;
-}
-
+/* Estilo dos post-its com fundo */
 .aviso-postit {
     padding: 1rem;
+    margin: 0.5rem;
     border-radius: 8px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: relative;
+}
+
+.aviso-postit.prioridade-alta {
+    background-color: #fddede; /* Vermelho claro */
+}
+
+.aviso-postit.prioridade-media {
+    background-color: #fff3cd; /* Amarelo claro */
+}
+
+.aviso-postit.prioridade-baixa {
+    background-color: #d4edda; /* Verde claro */
 }
 
 .aviso-data {
     font-weight: bold;
-    color: #d35400;
-    font-size: 1.1rem;
     display: block;
     margin-bottom: 0.5rem;
 }
 
-.aviso-postit p {
-    margin: 0.5rem 0;
-}
-
 .btn-leia-mais {
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #3498db;
-    color: white;
-    border-radius: 4px;
+    color: #007bff;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    display: inline-block;
 }
 
 .btn-leia-mais:hover {
-    background-color: #2980b9;
+    text-decoration: underline;
 }
+
+
 
 /* Cores para diferentes níveis de prioridade */
 .prioridade-alta {
@@ -292,43 +299,45 @@ footer {
 
 .cursos-lista {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    flex-wrap: wrap; /* Permite que os itens passem para a próxima linha em telas menores */
-    list-style-type: none; /* Remove as bolinhas da lista */
-    padding: 0;
-    margin: 0;
 }
 
 .curso-item {
-    background-color: var(--cor-primaria);
+    width: 100%; /* Responsivo para colunas de Bootstrap */
+    height: 100%; /* Para manter o tamanho */
+    min-height: 400px; /* Altura fixa para garantir o mesmo tamanho em todos os cards */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
-    text-align: center;
-    margin: 0.5rem;
-    transition: transform 0.3s ease;
-    width: 200px; /* Define uma largura fixa para os cartões */
-    height: 150px; /* Altura fixa para centralizar verticalmente */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.curso-item a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    width: 100%;
+.curso-item .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.curso-item:hover {
-    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
-    background-color: var(--cor-secundaria); /* Altera a cor de fundo ao passar o mouse */
+.card-title {
+    font-weight: bold;
+    color: #333;
 }
+
+.card-text {
+    color: #555;
+    flex-grow: 1; /* Expande para ocupar o espaço disponível */
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2c3e50;
+}
+
 
 /* Configurações do evento */
 .evento-card {
