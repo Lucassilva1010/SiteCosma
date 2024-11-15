@@ -426,6 +426,13 @@ p {
     font-size: 1rem;
 }
 
+/* Pagina de projetos */
+
+.img-fixa {
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
+    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+}
 
 
 
@@ -437,5 +444,16 @@ p {
     }
     nav ul li {
         margin: 0.25rem 0.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .nomCosma {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .curso-item, .membro-docente {
+        min-height: auto;
     }
 }
