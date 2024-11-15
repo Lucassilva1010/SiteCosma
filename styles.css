@@ -20,16 +20,65 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
 }
 
+/* Configurações do Topo do site */
+header {
+    padding-bottom: 0.5rem;
+    background-color: #3498db;
+    color: white;
+}
+.nomCosma{
+    font-size: 3.3rem;
+}
+
+.brasao {
+    width: 150px; /* Define um tamanho consistente para as imagens */
+    height: auto;
+}
+.escola {
+    width: 200px; /* Define um tamanho consistente para as imagens */
+    height: auto;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+p.lead {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #e1e1e1; /* Tom mais claro para o subtítulo */
+}
+
+
+h1 {
+    font-size: 3rem; /* Aumenta um pouco o título para equilibrar o design */
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+p.lead {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #e1e1e1;
+}
+
+
+.container {
+    max-width: 1200px; /* Limita a largura máxima para uma aparência mais centralizada */
+}
+
+
 header {
     background-color: var(--cor-primaria);
     color: white;
-    padding: 1rem 0;
+    padding: 0.2rem 0;
     text-align: center;
 }
 
@@ -44,6 +93,11 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    margin-top: 0;
+}
+
+.nvBar{
+    font-size: 1.5rem;
 }
 
 nav ul {
