@@ -139,6 +139,148 @@ footer {
     margin-top: 2rem;
 }
 
+.carousel-inner {
+    width: 100%;
+    height: 400px; /* Altura desejada do carrossel */
+    background-color: #ecf0f1;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Garante que o item ocupe toda a altura do contêiner */
+    overflow: hidden;
+}
+
+.foto-escola {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Preenche o espaço do carrossel sem distorções */
+    object-position: center; /* Centraliza a imagem */
+}
+
+/* Aqui são os avisos da escola */
+
+.cartao.avisos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f0f4c3; /* Cor de fundo para o contêiner de avisos */
+    border-radius: 8px;
+}
+
+.aviso-item {
+    flex: 1 1 30%;
+    min-width: 200px;
+}
+
+.aviso-postit {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.aviso-data {
+    font-weight: bold;
+    color: #d35400;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.aviso-postit p {
+    margin: 0.5rem 0;
+}
+
+.btn-leia-mais {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-leia-mais:hover {
+    background-color: #2980b9;
+}
+
+/* Cores para diferentes níveis de prioridade */
+.prioridade-alta {
+    background-color: #ffcccc;
+    border-left: 8px solid #e74c3c; /* Vermelho para alta prioridade */
+}
+
+.prioridade-media {
+    background-color: #fcf3cf;
+    border-left: 8px solid #f1c40f; /* Amarelo para média prioridade */
+}
+
+.prioridade-baixa {
+    background-color: #d4efdf;
+    border-left: 8px solid #2ecc71; /* Verde para baixa prioridade */
+}
+
+
+/* Informções dos crusos da escola */
+.cursos-container {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cursos-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que os itens passem para a próxima linha em telas menores */
+    list-style-type: none; /* Remove as bolinhas da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.curso-item {
+    background-color: var(--cor-primaria);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5rem;
+    transition: transform 0.3s ease;
+    width: 200px; /* Define uma largura fixa para os cartões */
+    height: 150px; /* Altura fixa para centralizar verticalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.curso-item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.curso-item:hover {
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+    background-color: var(--cor-secundaria); /* Altera a cor de fundo ao passar o mouse */
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
     nav ul {
         justify-content: flex-start;
