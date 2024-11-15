@@ -276,6 +276,35 @@ footer {
     background-color: var(--cor-secundaria); /* Altera a cor de fundo ao passar o mouse */
 }
 
+/* Configurações do evento */
+.evento-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Define a altura total do card */
+}
+
+.img-fixa {
+    height: 200px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
+}
+
+.evento-card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text {
+    flex-grow: 1; /* Garante que o texto expanda para preencher o espaço disponível */
+}
+
+.btn-primary {
+    align-self: flex-start;
+    margin-top: auto; /* Alinha o botão na parte inferior do card */
+}
+
 
 
 
